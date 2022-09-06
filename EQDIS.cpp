@@ -1,16 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-// void display(set<int> s)
-// {
-//   set<int>::iterator itr;
-   
-//   // Displaying set elements
-//   for (itr = s.begin();
-//        itr != s.end(); itr++)
-//   {
-//     cout << *itr << " ";
-//   }
-// } 
+
 int main(){
 
    int t;
@@ -19,38 +9,20 @@ int main(){
    {
       int n;
       cin>>n;
+      
       int arr[n];
-      // set<int> s;
+      bool a=true;
+       set<int> s;
       for (int i = 0; i < n; i++)
       {
          cin>>arr[i];
          int x=arr[i];
-         // s.insert(x);
+          s.insert(x);
       }
+     
+      if (s.size() & 1) {if (!(n - s.size())) {a = false;}}
+    cout << (a ? "YES" : "NO") << "\n";
       
-      if(n%2==0){
-         cout<<"YES"<<endl;
-      }else{
-         cout<<"NO"<<endl;
-      }
-
-      // display(s);
-      // cout<<s.size()<<endl;
-      // if(s.size()%2==0){
-      //    cout<<"YES"<<endl;
-      // }else{
-      // cout<<"NO"<<endl;
-      // }
-      
-
-            
-
-
-
-
-         
-
-
 
       
    }
