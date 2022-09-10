@@ -1,12 +1,20 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-   long long t,x,y;
-   while (t--)
-   {
-      cin>>x>>y;
-      long long int ans1=3*x-2*y;
-      cout<<ans1;
-      cout<<min(ans1,y)<<" "<<y<<" "<<max(ans1,y)<<endl;
-   }
+void kko()
+{
+    int x, y;
+    cin >> x >> y;
+    int A = -500, B = y, c = x * 3 - B - A;
+    cout << A << " " << B << " " << c << endl;
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        kko();
+    }
+    return 0;
 }
